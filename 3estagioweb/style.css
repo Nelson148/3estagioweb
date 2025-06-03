@@ -1,20 +1,34 @@
-/* GLOBAL */
+/* === ROOT VARIABLES === */
+:root {
+  --bg-grad-start: #0e0028;
+  --bg-grad-end: #1a0039;
+  --bg-dark: #14002e;
+  --accent: #ff6600;
+  --accent-hover: #e65c00;
+  --form-bg: rgba(255, 255, 255, 0.05);
+  --form-border: rgba(255, 255, 255, 0.1);
+  --form-bg-hover: rgba(255, 255, 255, 0.15);
+  --input-bg: rgba(255, 255, 255, 0.1);
+  --text-color: #fff;
+  --text-muted: #ccc;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* === GLOBAL STYLES === */
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background: linear-gradient(to bottom right, #0e0028, #1a0039);
-  color: #fff;
+  background: linear-gradient(to bottom right, var(--bg-grad-start), var(--bg-grad-end));
+  color: var(--text-color);
 }
-.navbar-custom {
+
+.navbar-custom,
+.voltatopo {
   background-color: #1e0235;
 }
 
 .recomendacoes {
-  background-color: #000000;
-}
-
-.voltatopo {
-  background-color: #1e0235;
+  background-color: #000;
 }
 
 .submenu-bar {
@@ -39,54 +53,46 @@ body {
   font-weight: bold;
   margin-left: auto;
 }
-/* INDEX PAGE STYLES */
 
-.index-page .banner-gnome {
-  max-width: 70%;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 0 25px rgba(255, 0, 255, 0.3);
-}
-
-/* CADASTRO PAGE STYLES */
-.cadastro-page .container-form {
-  background: rgba(255, 255, 255, 0.05);
+/* === SHARED FORM STYLES (Cadastro/Login/etc) === */
+.container-form {
+  background: var(--form-bg);
   backdrop-filter: blur(10px);
   max-width: 800px;
   margin: 40px auto;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--form-border);
 }
 
-.cadastro-page .form-control,
-.cadastro-page .form-select {
+.form-control,
+.form-select {
   border-radius: 8px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--input-bg);
   border: none;
-  color: #fff;
+  color: var(--text-color);
 }
 
-.cadastro-page .form-control::placeholder,
-.cadastro-page .form-select {
-  color: #ccc;
+.form-control::placeholder,
+.form-select {
+  color: var(--text-muted);
 }
 
-.cadastro-page .form-control:focus,
-.cadastro-page .form-select:focus {
-  background-color: rgba(255, 255, 255, 0.15);
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--form-bg-hover);
   box-shadow: none;
-  border: 1px solid #ff6600;
+  border: 1px solid var(--accent);
 }
 
-.cadastro-page .form-check-label {
+.form-check-label {
   font-size: 0.9rem;
 }
 
-.cadastro-page .btn-orange {
-  background-color: #ff6600;
+.btn-orange {
+  background-color: var(--accent);
   border: none;
   border-radius: 10px;
   font-weight: bold;
@@ -95,29 +101,29 @@ body {
   font-family: 'Orbitron', sans-serif;
 }
 
-.cadastro-page .btn-orange:hover {
-  background-color: #e65c00;
+.btn-orange:hover {
+  background-color: var(--accent-hover);
 }
 
-.cadastro-page .title {
-  color: #ff6600;
+.title {
+  color: var(--accent);
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.cadastro-page .form-footer {
+.form-footer {
   font-size: 0.8rem;
   color: #aaa;
 }
 
-.cadastro-page a.text-danger {
-  color: #ff6600 !important;
+a.text-danger {
+  color: var(--accent) !important;
 }
 
-/* LOGIN PAGE STYLES */
-.login-page .login-container {
-  background: #14002e;
+/* === LOGIN PAGE === */
+.login-container {
+  background: var(--bg-dark);
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
@@ -128,7 +134,7 @@ body {
   margin: auto;
 }
 
-.login-page .banner {
+.banner {
   background: url('https://cdn.pixabay.com/photo/2021/03/11/18/18/video-games-6086071_1280.jpg') no-repeat center center;
   background-size: cover;
   border-radius: 20px;
@@ -136,33 +142,33 @@ body {
   height: 400px;
 }
 
-.login-page .form-section {
+.form-section {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.login-page h2 {
-  color: #ff5c00;
+h2 {
+  color: var(--accent);
   margin-bottom: 20px;
   font-size: 24px;
   text-transform: uppercase;
 }
 
-.login-page input[type="text"],
-.login-page input[type="password"] {
+input[type="text"],
+input[type="password"] {
   padding: 15px;
   margin-bottom: 12px;
   border: none;
   border-radius: 12px;
-  background-color: #1f014a;
+  background-color:  rgba(255, 255, 255, 0.1);
   color: #ddd;
   font-size: 14px;
 }
 
-.login-page .btn-login {
+.btn-login {
   padding: 15px;
-  background-color: #ff5c00;
+  background-color: var(--accent);
   color: white;
   border: none;
   font-size: 18px;
@@ -172,21 +178,21 @@ body {
   margin-bottom: 12px;
 }
 
-.login-page .btn-login:hover {
-  background-color: #e25400;
+.btn-login:hover {
+  background-color: var(--accent-hover);
 }
 
-.login-page .social-btn {
+.social-btn {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 10px;
 }
 
-.login-page .social-btn button {
+.social-btn button {
   background-color: transparent;
-  border: 2px solid #ff5c00;
-  color: #ff5c00;
+  border: 2px solid var(--accent);
+  color: var(--accent);
   font-weight: bold;
   border-radius: 12px;
   padding: 12px;
@@ -198,20 +204,28 @@ body {
   gap: 10px;
 }
 
-.login-page .social-btn button:hover {
-  background-color: #ff5c00;
+.social-btn button:hover {
+  background-color: var(--accent);
   color: white;
 }
 
-.login-page .signup-link {
+.signup-link {
   color: #ffb347;
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
 }
 
-.login-page .signup-link a {
+.signup-link a {
   color: #fff;
   text-decoration: underline;
   font-weight: bold;
+}
+
+/* === INDEX PAGE (BANNER STYLE) === */
+.banner-gnome {
+  max-width: 70%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.3);
 }
