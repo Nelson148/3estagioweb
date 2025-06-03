@@ -21,6 +21,21 @@ body {
   background: linear-gradient(to bottom right, var(--bg-grad-start), var(--bg-grad-end));
   color: var(--text-color);
 }
+.mascote-flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  z-index: 9999;
+  animation: flutuar 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes flutuar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
 
 .navbar-custom,
 .voltatopo {
