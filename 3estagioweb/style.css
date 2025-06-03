@@ -1,0 +1,217 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to bottom right, #0e0028, #1a0039);
+  color: #fff;
+}
+.navbar-custom {
+  background-color: #1e0235;
+}
+
+.recomendacoes {
+  background-color: #000000;
+}
+
+.voltatopo {
+  background-color: #1e0235;
+}
+
+.submenu-bar {
+  background-color: #000000ea;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.submenu-bar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 16px;
+  font-weight: 500;
+}
+
+.submenu-bar a:hover {
+  text-decoration: underline;
+}
+
+.submenu-bar .highlight {
+  font-weight: bold;
+  margin-left: auto;
+}
+/* INDEX PAGE STYLES */
+
+.index-page .banner-gnome {
+  max-width: 70%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.3);
+}
+
+/* CADASTRO PAGE STYLES */
+.cadastro-page .container-form {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cadastro-page .form-control,
+.cadastro-page .form-select {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+}
+
+.cadastro-page .form-control::placeholder,
+.cadastro-page .form-select {
+  color: #ccc;
+}
+
+.cadastro-page .form-control:focus,
+.cadastro-page .form-select:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: none;
+  border: 1px solid #ff6600;
+}
+
+.cadastro-page .form-check-label {
+  font-size: 0.9rem;
+}
+
+.cadastro-page .btn-orange {
+  background-color: #ff6600;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 12px 30px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.cadastro-page .btn-orange:hover {
+  background-color: #e65c00;
+}
+
+.cadastro-page .title {
+  color: #ff6600;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cadastro-page .form-footer {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.cadastro-page a.text-danger {
+  color: #ff6600 !important;
+}
+
+/* LOGIN PAGE STYLES */
+.login-page .login-container {
+  background: #14002e;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.login-page .banner {
+  background: url('https://cdn.pixabay.com/photo/2021/03/11/18/18/video-games-6086071_1280.jpg') no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+.login-page .form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page h2 {
+  color: #ff5c00;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.login-page input[type="text"],
+.login-page input[type="password"] {
+  padding: 15px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #1f014a;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.login-page .btn-login {
+  padding: 15px;
+  background-color: #ff5c00;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.login-page .btn-login:hover {
+  background-color: #e25400;
+}
+
+.login-page .social-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.login-page .social-btn button {
+  background-color: transparent;
+  border: 2px solid #ff5c00;
+  color: #ff5c00;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-page .social-btn button:hover {
+  background-color: #ff5c00;
+  color: white;
+}
+
+.login-page .signup-link {
+  color: #ffb347;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-page .signup-link a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
