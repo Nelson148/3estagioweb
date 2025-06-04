@@ -238,9 +238,26 @@ input[type="password"] {
 }
 
 /* === INDEX PAGE (BANNER STYLE) === */
-.banner-gnome {
-  max-width: 70%;
+.pagina-conta .banner-gnome {
+  max-width: 50%;
   height: auto;
   border-radius: 16px;
   box-shadow: 0 0 25px rgba(255, 0, 255, 0.3);
+}
+/*sidebar css*/
+.pagina-conta .sidebar-conta {
+  background-color: #1a0039;
+  padding: 20px;
+  height: 100vh;
+}
+
+.pagina-conta .sidebar-conta a {
+  display: block;
+  color: white;
+  margin: 15px 0;
+  text-decoration: none;
+}
+
+.pagina-conta .sidebar-conta a:hover {
+  text-decoration: underline;
 }
