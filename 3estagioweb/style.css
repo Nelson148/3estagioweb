@@ -261,3 +261,67 @@ input[type="password"] {
 .pagina-conta .sidebar-conta a:hover {
   text-decoration: underline;
 }
+
+/* CARRINHO DE COMPRAS - SHOPONLINE */
+.pagina-carrinho {
+  background: linear-gradient(to bottom right, #0e0028, #1a0039);
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.pagina-carrinho .carrinho-header {
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.pagina-carrinho .carrinho-header h2 {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.pagina-carrinho .carrinho-vazio {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+.pagina-carrinho .ofertas-destaque {
+  padding: 0 20px 40px;
+}
+
+.pagina-carrinho .ofertas-destaque h4 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pagina-carrinho .produto {
+  background-color: #1f014a;
+  border-radius: 12px;
+  padding: 15px;
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.pagina-carrinho .produto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+}
+
+.pagina-carrinho .produto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.pagina-carrinho .preco-antigo {
+  text-decoration: line-through;
+  color: #ffb3b3;
+}
+
+.pagina-carrinho .preco-novo {
+  color: #00ff88;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
